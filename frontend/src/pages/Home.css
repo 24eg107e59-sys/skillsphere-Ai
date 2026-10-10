@@ -1,0 +1,28 @@
+.home-page {
+  min-height: 100vh;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f5f7ff;
+  color: #172033;
+}
+
+.home-page h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  margin-bottom: 30px;
+  color: #667085;
+}
+
+.home-page a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #635bff;
+  color: white;
+  text-decoration: none;
+}

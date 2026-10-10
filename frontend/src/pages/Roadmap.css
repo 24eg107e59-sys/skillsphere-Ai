@@ -1,0 +1,496 @@
+.roadmap-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #1e293b;
+}
+
+.roadmap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 36px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.roadmap-content {
+  max-width: 1050px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+.roadmap-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.roadmap-title-bar h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.roadmap-title-bar p {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.roadmap-meta-pills {
+  display: flex;
+  gap: 10px;
+}
+
+.meta-pill {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.meta-pill.phases {
+  background: #ede9fe;
+  color: #6d28d9;
+  border-color: #ddd6fe;
+}
+
+/* AI Advice Card */
+.roadmap-advice-card {
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+  border: 1px solid #ddd6fe;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.advice-icon {
+  font-size: 32px;
+}
+
+.advice-text h4 {
+  font-size: 16px;
+  color: #5b21b6;
+  margin-bottom: 4px;
+}
+
+.advice-text p {
+  font-size: 14px;
+  color: #4c1d95;
+  line-height: 1.5;
+}
+
+/* Tabs */
+.roadmap-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #64748b;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab-btn:hover {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.tab-btn.active {
+  color: #635bff;
+  background: #eff6ff;
+  font-weight: 700;
+}
+
+/* Timeline */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.timeline-card {
+  display: flex;
+  gap: 24px;
+}
+
+.timeline-badge-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phase-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #635bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(99, 91, 255, 0.3);
+  flex-shrink: 0;
+}
+
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  background: #cbd5e1;
+  margin: 10px 0;
+}
+
+.timeline-body {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.phase-num {
+  font-size: 12px;
+  font-weight: 700;
+  color: #635bff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.phase-header h3 {
+  font-size: 19px;
+  color: #0f172a;
+  margin-top: 4px;
+}
+
+.phase-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.duration-badge {
+  background: #f1f5f9;
+  color: #334155;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-badge.in-progress {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.not-started {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.phase-description {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.skill-focus-pill {
+  background: #f8fafc;
+  border-left: 3px solid #635bff;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #1e293b;
+  margin-bottom: 18px;
+}
+
+.topics-section h4 {
+  font-size: 14px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.topic-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #334155;
+}
+
+.check-icon {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.project-highlight-box {
+  background: #fdf4ff;
+  border: 1px solid #f5d0fe;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.project-icon {
+  font-size: 24px;
+}
+
+.project-content strong {
+  display: block;
+  font-size: 13px;
+  color: #86198f;
+  margin-bottom: 2px;
+}
+
+.project-content p {
+  font-size: 13px;
+  color: #701a75;
+  margin: 0;
+}
+
+/* Recommended Courses Grid */
+.courses-tab-view {
+  margin-bottom: 36px;
+}
+
+.section-intro {
+  margin-bottom: 20px;
+}
+
+.section-intro h3 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.section-intro p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.course-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course-icon {
+  font-size: 28px;
+}
+
+.course-level-tag {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.course-skill-pill {
+  display: inline-block;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+
+.course-card h4 {
+  font-size: 17px;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.course-desc {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+.course-meta-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.course-modules-list {
+  background: #f8fafc;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.course-modules-list small {
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.course-modules-list ul {
+  margin: 6px 0 0 16px;
+  padding: 0;
+  font-size: 12px;
+  color: #334155;
+}
+
+.course-modules-list li {
+  margin-bottom: 4px;
+}
+
+.enroll-btn {
+  width: 100%;
+  padding: 11px;
+  background: #635bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.enroll-btn:hover {
+  background: #5148d9;
+}
+
+.enroll-btn.enrolled {
+  background: #16a34a;
+}
+
+/* Roadmap Footer */
+.roadmap-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.browse-all-btn {
+  background: #0f172a;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.browse-all-btn:hover {
+  background: #1e293b;
+}
+
+.back-gap-btn {
+  background: white;
+  border: 1px solid #cbd5e1;
+  color: #0f172a;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-gap-btn:hover {
+  border-color: #635bff;
+  color: #635bff;
+}
+
+.roadmap-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #64748b;
+}
