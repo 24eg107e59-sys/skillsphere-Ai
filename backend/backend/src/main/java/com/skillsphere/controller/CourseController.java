@@ -19,7 +19,7 @@ import com.skillsphere.service.CourseCatalogService;
 import com.skillsphere.service.SkillGapService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/courses")
 public class CourseController {
 

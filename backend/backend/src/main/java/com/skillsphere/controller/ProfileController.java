@@ -19,7 +19,7 @@ import com.skillsphere.entity.Profile;
 import com.skillsphere.service.ProfileService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/profile")
 public class ProfileController {
 

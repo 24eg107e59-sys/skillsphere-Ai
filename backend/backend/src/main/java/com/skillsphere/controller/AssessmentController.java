@@ -21,7 +21,7 @@ import com.skillsphere.entity.AssessmentResult;
 import com.skillsphere.service.AssessmentService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/assessments")
 public class AssessmentController {
 

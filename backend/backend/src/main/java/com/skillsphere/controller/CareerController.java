@@ -12,7 +12,7 @@ import com.skillsphere.dto.CareerOption;
 import com.skillsphere.service.CareerService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/careers")
 public class CareerController {
 

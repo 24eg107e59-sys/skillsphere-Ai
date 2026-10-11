@@ -14,7 +14,7 @@ import com.skillsphere.dto.SkillGapResponse;
 import com.skillsphere.service.SkillGapService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/skill-gap")
 public class SkillGapController {
 

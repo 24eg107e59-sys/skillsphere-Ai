@@ -14,7 +14,7 @@ import com.skillsphere.dto.RoadmapResponse;
 import com.skillsphere.service.RoadmapService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/roadmap")
 public class RoadmapController {
 
